@@ -124,8 +124,12 @@
 
   .spec-card{
     background:var(--white); border:1px solid var(--line); position:relative;
-    padding:26px; transition:transform .25s, box-shadow .25s;
+    padding:0 0 26px; transition:transform .25s, box-shadow .25s; overflow:hidden;
   }
+  .spec-card .card-body{padding:22px 26px 0;}
+  .spec-img{width:100%; height:150px; object-fit:cover; display:block; border-bottom:1px solid var(--line);}
+  .hero-img-wrap{margin-top:44px; border:1px solid var(--line); overflow:hidden;}
+  .hero-img-wrap img{width:100%; display:block; object-fit:cover; max-height:360px;}
   .spec-card:hover{transform:translateY(-4px); box-shadow:0 14px 28px -18px rgba(22,40,61,0.35);}
   .spec-card::before, .spec-card::after,
   .corner-tl, .corner-br{content:''; position:absolute; width:9px; height:9px; border:1px solid var(--blue-soft);}
@@ -216,6 +220,9 @@
       <a class="btn btn-yellow" href="#prototipos">Ver los 14 prototipos</a>
       <a class="btn btn-outline" href="https://wa.me/524422319291?text=Hola%2C%20quiero%20agendar%20una%20visita%20a%20Capital%20Sur" target="_blank">Agendar visita por WhatsApp →</a>
     </div>
+    <div class="hero-img-wrap">
+      <img src="hero-lago.jpg" alt="Lago y áreas verdes de Capital Sur">
+    </div>
   </div>
   <div class="wrap">
     <div class="stat-strip">
@@ -244,117 +251,143 @@
     <!-- 2 RECAMARAS -->
     <div class="model-cat active" id="rec2">
       <div class="spec-card">
+        <img class="spec-img" src="toledo.jpg" alt="Foto real Prototipo Toledo">
         <div class="corner-tl"></div><div class="corner-br"></div>
+        <div class="card-body">
         <div class="sheet-code mono">HOJA A-01 · 2 REC</div>
         <h3>Toledo</h3>
         <div class="spec-row"><span>Terreno</span><span>99 m²</span></div>
         <div class="spec-row"><span>Construcción</span><span>97.50 m²</span></div>
         <div class="price-block"><div class="price">$2,697,000</div><div class="price-note">desde $23,336/mes con crédito hipotecario</div></div>
         <ul class="feat-list">
-          <li>2 recámaras</li><li>2.5 baños</li><li>Comedor</li><li>Cochera 2 autos</li><li>Cocina</li><li>Cuarto de lavado</li>
+          <li>2 recámaras</li><li>2.5 baños</li><li>Comedor</li><li>Cochera 2 autos</li><li>Cocina</li><li>Cuarto de lavado</li><li>Pasillo lateral</li>
         </ul>
         <a class="card-cta" href="https://wa.me/524422319291?text=Hola%2C%20me%20interesa%20el%20modelo%20Toledo%20de%20Capital%20Sur" target="_blank">Cotizar Toledo →</a>
+        </div>
       </div>
 
       <div class="spec-card">
+        <img class="spec-img" src="velasco.jpg" alt="Foto real Prototipo Velasco">
         <div class="corner-tl"></div><div class="corner-br"></div>
+        <div class="card-body">
         <div class="sheet-code mono">HOJA A-02 · 2 REC</div>
         <h3>Velasco</h3>
         <div class="spec-row"><span>Terreno</span><span>90.50 m²</span></div>
         <div class="spec-row"><span>Construcción</span><span>89.50 m²</span></div>
         <div class="price-block"><div class="price">$2,382,000</div><div class="price-note">desde $24,814/mes con crédito hipotecario</div></div>
         <ul class="feat-list">
-          <li>2 recámaras</li><li>Comedor</li><li>Cochera 2 autos</li><li>Sala</li><li>Cuarto de lavado</li>
+          <li>2 recámaras</li><li>Comedor</li><li>Cochera 2 autos</li><li>Sala</li><li>Cuarto de lavado</li><li>Pasillo lateral</li>
         </ul>
         <a class="card-cta" href="https://wa.me/524422319291?text=Hola%2C%20me%20interesa%20el%20modelo%20Velasco%20de%20Capital%20Sur" target="_blank">Cotizar Velasco →</a>
+        </div>
       </div>
 
       <div class="spec-card">
+        <img class="spec-img" src="fuentes.jpg" alt="Foto real Prototipo Fuentes">
         <div class="corner-tl"></div><div class="corner-br"></div>
+        <div class="card-body">
         <div class="sheet-code mono">HOJA A-03 · 2 REC</div>
         <h3>Fuentes</h3>
         <div class="spec-row"><span>Terreno</span><span>82.50 m²</span></div>
         <div class="spec-row"><span>Construcción</span><span>61.55 m²</span></div>
         <div class="price-block"><div class="price">$1,739,000</div><div class="price-note">desde $17,569/mes con crédito hipotecario</div></div>
         <ul class="feat-list">
-          <li>2 recámaras</li><li>1.5 baños</li><li>Comedor</li><li>Cochera 1 auto</li><li>Cocina</li><li>Sala</li>
+          <li>2 recámaras</li><li>1.5 baños</li><li>Comedor</li><li>Cochera 1 auto</li><li>Cocina</li><li>Sala</li><li>Pasillo lateral</li>
         </ul>
         <a class="card-cta" href="https://wa.me/524422319291?text=Hola%2C%20me%20interesa%20el%20modelo%20Fuentes%20de%20Capital%20Sur" target="_blank">Cotizar Fuentes →</a>
+        </div>
       </div>
     </div>
 
     <!-- 3 RECAMARAS -->
     <div class="model-cat" id="rec3">
       <div class="spec-card">
+        <img class="spec-img" src="tamayo.jpg" alt="Foto real Prototipo Tamayo">
         <div class="corner-tl"></div><div class="corner-br"></div>
+        <div class="card-body">
         <div class="sheet-code mono">HOJA B-01 · 3 REC</div>
         <h3>Tamayo</h3>
         <div class="spec-row"><span>Terreno</span><span>115.50 m²</span></div>
         <div class="spec-row"><span>Construcción</span><span>123 m²</span></div>
         <div class="price-block"><div class="price">$3,109,000</div><div class="price-note">desde $32,909/mes con crédito hipotecario</div></div>
         <ul class="feat-list">
-          <li>3 recámaras</li><li>2.5 baños</li><li>Comedor</li><li>Cochera 2 autos</li><li>Cocina</li><li>Cuarto de lavado</li>
+          <li>3 recámaras</li><li>2.5 baños</li><li>Comedor</li><li>Cochera 2 autos</li><li>Cocina</li><li>Cuarto de lavado</li><li>Pasillo lateral</li>
         </ul>
         <a class="card-cta" href="https://wa.me/524422319291?text=Hola%2C%20me%20interesa%20el%20modelo%20Tamayo%20de%20Capital%20Sur" target="_blank">Cotizar Tamayo →</a>
+        </div>
       </div>
 
       <div class="spec-card">
+        <img class="spec-img" src="frida.jpg" alt="Foto real Prototipo Frida">
         <div class="corner-tl"></div><div class="corner-br"></div>
+        <div class="card-body">
         <div class="sheet-code mono">HOJA B-02 · 3 REC</div>
         <h3>Frida</h3>
         <div class="spec-row"><span>Terreno</span><span>115 m²</span></div>
         <div class="spec-row"><span>Construcción</span><span>106 m²</span></div>
         <div class="price-block"><div class="price">$2,948,000</div><div class="price-note">desde $30,890/mes con crédito hipotecario</div></div>
         <ul class="feat-list">
-          <li>3 recámaras</li><li>2.5 baños</li><li>Comedor</li><li>Cochera 2 autos</li><li>Cocina</li><li>Sala</li>
+          <li>3 recámaras</li><li>2.5 baños</li><li>Comedor</li><li>Cochera 2 autos</li><li>Cocina</li><li>Sala</li><li>Cuarto de lavado</li>
         </ul>
         <a class="card-cta" href="https://wa.me/524422319291?text=Hola%2C%20me%20interesa%20el%20modelo%20Frida%20de%20Capital%20Sur" target="_blank">Cotizar Frida →</a>
+        </div>
       </div>
 
       <div class="spec-card">
+        <img class="spec-img" src="monsivais.jpg" alt="Foto real Prototipo Monsiváis">
         <div class="corner-tl"></div><div class="corner-br"></div>
+        <div class="card-body">
         <div class="sheet-code mono">HOJA B-03 · 3 REC</div>
         <h3>Monsiváis</h3>
         <div class="spec-row"><span>Terreno</span><span>99 m²</span></div>
         <div class="spec-row"><span>Construcción</span><span>97.50 m²</span></div>
         <div class="price-block"><div class="price">$2,697,000</div><div class="price-note">desde $27,752/mes con crédito hipotecario</div></div>
         <ul class="feat-list">
-          <li>3 recámaras</li><li>2.5 baños</li><li>Comedor</li><li>Cochera 2 autos</li><li>Cocina</li><li>Sala</li>
+          <li>3 recámaras</li><li>2.5 baños</li><li>Comedor</li><li>Cochera 2 autos</li><li>Cocina</li><li>Sala</li><li>Pasillo lateral</li>
         </ul>
         <a class="card-cta" href="https://wa.me/524422319291?text=Hola%2C%20me%20interesa%20el%20modelo%20Monsiv%C3%A1is%20de%20Capital%20Sur" target="_blank">Cotizar Monsiváis →</a>
+        </div>
       </div>
 
       <div class="spec-card">
+        <img class="spec-img" src="orozco.jpg" alt="Foto real Prototipo Orozco">
         <div class="corner-tl"></div><div class="corner-br"></div>
+        <div class="card-body">
         <div class="sheet-code mono">HOJA B-04 · 3 REC</div>
         <h3>Orozco</h3>
         <div class="spec-row"><span>Terreno</span><span>90.50 m²</span></div>
         <div class="spec-row"><span>Construcción</span><span>83 m²</span></div>
         <div class="price-block"><div class="price">$2,266,000</div><div class="price-note">desde $23,976/mes con crédito hipotecario</div></div>
         <ul class="feat-list">
-          <li>3 recámaras</li><li>1.5 baños</li><li>Comedor</li><li>Cochera 1 auto</li><li>Cocina</li><li>Cuarto de lavado</li>
+          <li>3 recámaras</li><li>1.5 baños</li><li>Comedor</li><li>Cochera 1 auto</li><li>Cocina</li><li>Cuarto de lavado</li><li>Pasillo lateral</li>
         </ul>
         <a class="card-cta" href="https://wa.me/524422319291?text=Hola%2C%20me%20interesa%20el%20modelo%20Orozco%20de%20Capital%20Sur" target="_blank">Cotizar Orozco →</a>
+        </div>
       </div>
 
       <div class="spec-card">
+        <img class="spec-img" src="alisios.jpg" alt="Foto real Prototipo Alisios">
         <div class="corner-tl"></div><div class="corner-br"></div>
+        <div class="card-body">
         <div class="sheet-code mono">HOJA B-05 · 3 REC</div>
         <h3>Alisios</h3>
         <div class="spec-row"><span>Terreno</span><span>87.45 m²</span></div>
         <div class="spec-row"><span>Construcción</span><span>75.54 m²</span></div>
         <div class="price-block"><div class="price">$1,995,000</div><div class="price-note">desde $20,317/mes con crédito hipotecario</div></div>
         <ul class="feat-list">
-          <li>3 recámaras</li><li>1.5 baños</li><li>Comedor</li><li>Cochera 1 auto</li><li>Cocina</li><li>Sala</li>
+          <li>3 recámaras</li><li>1.5 baños</li><li>Comedor</li><li>Cochera 1 auto</li><li>Cocina</li><li>Sala</li><li>Pasillo lateral</li>
         </ul>
         <a class="card-cta" href="https://wa.me/524422319291?text=Hola%2C%20me%20interesa%20el%20modelo%20Alisios%20de%20Capital%20Sur" target="_blank">Cotizar Alisios →</a>
+        </div>
       </div>
     </div>
 
     <!-- NUEVA GENERACION -->
     <div class="model-cat" id="nueva">
       <div class="spec-card">
+        <img class="spec-img" src="mangara.jpg" alt="Render Prototipo Mangara">
         <div class="corner-tl"></div><div class="corner-br"></div>
+        <div class="card-body">
         <div class="sheet-code mono">HOJA C-01 · DUPLEX · P.BAJA</div>
         <h3>Mangara Planta Baja</h3>
         <div class="spec-row"><span>Construcción</span><span>52.73 m²</span></div>
@@ -364,10 +397,13 @@
           <li>2 recámaras</li><li>1 baño</li><li>Comedor</li><li>Sala</li><li>Cocina</li><li>Cuarto de lavado</li>
         </ul>
         <a class="card-cta" href="https://wa.me/524422319291?text=Hola%2C%20me%20interesa%20el%20modelo%20Mangara%20Planta%20Baja%20de%20Capital%20Sur" target="_blank">Cotizar Mangara PB →</a>
+        </div>
       </div>
 
       <div class="spec-card">
+        <img class="spec-img" src="mangara.jpg" alt="Render Prototipo Mangara">
         <div class="corner-tl"></div><div class="corner-br"></div>
+        <div class="card-body">
         <div class="sheet-code mono">HOJA C-02 · DUPLEX · P.ALTA</div>
         <h3>Mangara Planta Alta</h3>
         <div class="spec-row"><span>Construcción</span><span>52.73 m²*</span></div>
@@ -377,10 +413,13 @@
           <li>2 recámaras</li><li>1 baño</li><li>Comedor</li><li>Sala</li><li>Cocina</li><li>Cuarto de lavado</li>
         </ul>
         <a class="card-cta" href="https://wa.me/524422319291?text=Hola%2C%20me%20interesa%20el%20modelo%20Mangara%20Planta%20Alta%20de%20Capital%20Sur" target="_blank">Cotizar Mangara PA →</a>
+        </div>
       </div>
 
       <div class="spec-card">
+        <img class="spec-img" src="alba.jpg" alt="Render Prototipo Alba Loft">
         <div class="corner-tl"></div><div class="corner-br"></div>
+        <div class="card-body">
         <div class="sheet-code mono">HOJA C-03 · LOFT</div>
         <h3>Alba</h3>
         <div class="spec-row"><span>Terreno</span><span>99 m²</span></div>
@@ -391,10 +430,13 @@
           <li>2 recámaras</li><li>2 baños</li><li>Comedor</li><li>Sala</li><li>Cocina</li><li>Patio trasero</li>
         </ul>
         <a class="card-cta" href="https://wa.me/524422319291?text=Hola%2C%20me%20interesa%20el%20modelo%20Alba%20de%20Capital%20Sur" target="_blank">Cotizar Alba →</a>
+        </div>
       </div>
 
       <div class="spec-card">
+        <img class="spec-img" src="aura.jpg" alt="Render Prototipo Aura">
         <div class="corner-tl"></div><div class="corner-br"></div>
+        <div class="card-body">
         <div class="sheet-code mono">HOJA C-04 · 3 REC</div>
         <h3>Aura</h3>
         <div class="spec-row"><span>Terreno</span><span>99 m²</span></div>
@@ -405,10 +447,13 @@
           <li>3 recámaras (opción a estudio en PB)</li><li>2 baños</li><li>Comedor</li><li>Sala</li><li>Cocina</li><li>Patio trasero</li>
         </ul>
         <a class="card-cta" href="https://wa.me/524422319291?text=Hola%2C%20me%20interesa%20el%20modelo%20Aura%20de%20Capital%20Sur" target="_blank">Cotizar Aura →</a>
+        </div>
       </div>
 
       <div class="spec-card">
+        <img class="spec-img" src="mare.jpg" alt="Render Prototipo Maré">
         <div class="corner-tl"></div><div class="corner-br"></div>
+        <div class="card-body">
         <div class="sheet-code mono">HOJA C-05</div>
         <h3>Maré</h3>
         <div class="spec-row"><span>Terreno</span><span>82.5 m²</span></div>
@@ -419,10 +464,13 @@
           <li>2 recámaras</li><li>1.5 baños</li><li>Comedor</li><li>Sala</li><li>Cocina</li><li>Patio trasero</li>
         </ul>
         <a class="card-cta" href="https://wa.me/524422319291?text=Hola%2C%20me%20interesa%20el%20modelo%20Mar%C3%A9%20de%20Capital%20Sur" target="_blank">Cotizar Maré →</a>
+        </div>
       </div>
 
       <div class="spec-card">
+        <img class="spec-img" src="nuvem.jpg" alt="Render Prototipo Nuvem">
         <div class="corner-tl"></div><div class="corner-br"></div>
+        <div class="card-body">
         <div class="sheet-code mono">HOJA C-06 · 3 REC</div>
         <h3>Nuvem</h3>
         <div class="spec-row"><span>Terreno</span><span>99 m²</span></div>
@@ -433,10 +481,13 @@
           <li>3 recámaras (opción a estudio en PB)</li><li>2.5 baños</li><li>Comedor</li><li>Sala</li><li>Cocina</li><li>Patio trasero</li>
         </ul>
         <a class="card-cta" href="https://wa.me/524422319291?text=Hola%2C%20me%20interesa%20el%20modelo%20Nuvem%20de%20Capital%20Sur" target="_blank">Cotizar Nuvem →</a>
+        </div>
       </div>
 
       <div class="spec-card">
+        <img class="spec-img" src="ziba.jpg" alt="Render Prototipo Zibá">
         <div class="corner-tl"></div><div class="corner-br"></div>
+        <div class="card-body">
         <div class="sheet-code mono">HOJA C-07</div>
         <h3>Zibá</h3>
         <div class="spec-row"><span>Terreno</span><span>99 m²</span></div>
@@ -447,6 +498,7 @@
           <li>2 recámaras</li><li>1.5 baños</li><li>Comedor</li><li>Sala</li><li>Cocina</li><li>Patio trasero</li>
         </ul>
         <a class="card-cta" href="https://wa.me/524422319291?text=Hola%2C%20me%20interesa%20el%20modelo%20Zib%C3%A1%20de%20Capital%20Sur" target="_blank">Cotizar Zibá →</a>
+        </div>
       </div>
     </div>
   </div>
