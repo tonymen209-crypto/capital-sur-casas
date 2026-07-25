@@ -49,7 +49,10 @@
     border-bottom:1px solid var(--line);
   }
   header .wrap{display:flex; align-items:center; justify-content:space-between; height:76px;}
-  .brand{font-family:'Fraunces',serif; font-weight:600; font-size:1.15rem; letter-spacing:0.01em;}
+  .brand{font-family:'Fraunces',serif; font-weight:600; font-size:1.05rem; letter-spacing:0.01em; display:flex; align-items:center; gap:12px;}
+  .brand img{height:38px; width:auto; display:block;}
+  .brand-text{display:flex; flex-direction:column; line-height:1.15;}
+  .brand-text .sub{font-family:'IBM Plex Mono',monospace; font-weight:400; font-size:0.62rem; letter-spacing:0.1em; color:var(--blue); text-transform:uppercase; margin-top:2px;}
   .brand span{color:var(--blue);}
   header nav{display:flex; gap:28px; font-size:0.85rem; font-weight:500;}
   header nav a{opacity:0.75; transition:opacity .2s;}
@@ -198,7 +201,13 @@
 
 <header>
   <div class="wrap">
-    <div class="brand">CAPITAL SUR <span>· Asesoría</span></div>
+    <div class="brand">
+      <img src="logo-icon.jpg" alt="Logo Mendoza Inmobiliaria">
+      <div class="brand-text">
+        Mendoza
+        <span class="sub">Inmobiliaria y Bienes Raíces</span>
+      </div>
+    </div>
     <nav>
       <a href="#prototipos">Prototipos</a>
       <a href="#amenidades">Amenidades</a>
