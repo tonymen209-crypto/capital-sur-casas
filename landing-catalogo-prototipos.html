@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Casas Nuevas en El Marqués, Querétaro | Antonio Mendoza</title>
+<meta name="description" content="14 prototipos desde $1,739,000 MXN en El Marqués, Querétaro. Comunidad con lago, casa club y áreas verdes. Escríbeme por WhatsApp para más información.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#FAF7F1;
+    --surface:#FFFFFF;
+    --surface-alt:#EFEADA;
+    --ink:#22281D;
+    --ink-soft:#5B6155;
+    --primary:#3F6B4F;
+    --primary-soft:#7DA688;
+    --primary-pale:#E4ECE4;
+    --line: rgba(63,107,79,0.18);
+    --whatsapp:#25D366;
+    --radius: 3px;
+  }
+  *{box-sizing:border-box; margin:0; padding:0;}
+  html{scroll-behavior:smooth;}
+  body{
+    font-family:'Manrope', sans-serif;
+    color: var(--ink);
+    background: var(--bg);
+    -webkit-font-smoothing: antialiased;
+    overflow-x:hidden;
+  }
+  h1,h2,h3, .display{font-family:'Fraunces', serif; font-weight:600; letter-spacing:-0.01em;}
+  .eyebrow{
+    font-family:'Manrope', sans-serif; font-weight:700; font-size:0.72rem;
+    letter-spacing:0.18em; text-transform:uppercase; color: var(--primary);
+  }
+  a{color:inherit; text-decoration:none;}
+  img{max-width:100%; display:block;}
+  .wrap{max-width:1160px; margin:0 auto; padding:0 24px;}
+  section{padding:76px 0;}
+  .section-head{max-width:640px; margin-bottom:44px;}
+  .section-head h2{font-size:clamp(1.6rem, 3.4vw, 2.3rem); margin-top:12px; color:var(--ink);}
+  .section-head p{margin-top:14px; color:var(--ink-soft); line-height:1.6; font-size:1rem;}
+
+  header{
+    position:sticky; top:0; z-index:50;
+    background: rgba(250,247,241,0.92);
+    backdrop-filter: blur(8px);
+    border-bottom:1px solid var(--line);
+  }
+  header .wrap{display:flex; align-items:center; justify-content:space-between; padding-top:14px; padding-bottom:14px; gap:20px;}
+  .brand-group{display:flex; align-items:center; gap:10px;}
+  .brand-group img{width:34px; height:34px; border-radius:50%; object-fit:cover;}
+  .brand{color:var(--ink); font-family:'Fraunces', serif; font-size:1.05rem; font-weight:600;}
+  nav.links{display:flex; gap:22px;}
+  nav.links a{font-size:0.86rem; color:var(--ink-soft); font-weight:600;}
+  nav.links a:hover{color:var(--primary);}
+  .header-cta{display:flex; align-items:center; gap:8px; background:var(--primary); color:#fff; font-weight:700; font-size:0.82rem; padding:10px 16px; border-radius:999px; white-space:nowrap;}
+  .header-cta:hover{background:var(--primary-soft);}
+
+  .hero{position:relative; background: var(--bg); padding:56px 0 0; overflow:hidden;}
+  .hero-inner{display:grid; grid-template-columns:1.1fr 1fr; gap:48px; align-items:center;}
+  .hero h1{font-size:clamp(2.1rem, 5.6vw, 3.4rem); line-height:1.05; margin-top:14px; color:var(--ink);}
+  .hero h1 em{font-style:normal; color:var(--primary);}
+  .hero p.lede{margin-top:20px; font-size:1.05rem; line-height:1.6; color:var(--ink-soft); max-width:480px;}
+  .hero-actions{margin-top:30px; display:flex; flex-wrap:wrap; gap:14px; align-items:center;}
+  .btn-primary{display:inline-flex; align-items:center; gap:10px; background:var(--whatsapp); color:#fff; font-weight:700; font-size:0.96rem; padding:15px 24px; border-radius:999px; box-shadow:0 10px 26px -8px rgba(37,211,102,0.45);}
+  .btn-primary:hover{filter:brightness(1.05);}
+  .btn-primary svg{width:19px; height:19px; flex-shrink:0;}
+  .btn-secondary{display:inline-flex; align-items:center; gap:8px; border:1.5px solid var(--line); color:var(--ink); font-weight:600; font-size:0.9rem; padding:13.5px 22px; border-radius:999px;}
+  .btn-secondary:hover{border-color:var(--primary); color:var(--primary);}
+  .hero-photo{position:relative; height:100%; min-height:320px; border-radius:16px; overflow:hidden; box-shadow:0 20px 50px -20px rgba(63,107,79,0.35);}
+  .hero-photo img{width:100%; height:100%; object-fit:cover;}
+  .hero-stats{margin-top:56px; display:grid; grid-template-columns:repeat(4,1fr); background:var(--surface); border:1px solid var(--line); border-radius:16px; overflow:hidden;}
+  .hero-stats div{padding:22px 20px; border-right:1px solid var(--line);}
+  .hero-stats div:last-child{border-right:none;}
+  .hero-stats dt{font-family:'Fraunces', serif; font-size:1.5rem; color:var(--primary);}
+  .hero-stats dd{font-size:0.76rem; color:var(--ink-soft); margin-top:4px; line-height:1.35;}
+
+  .filtros{display:flex; gap:10px; flex-wrap:wrap; margin-top:6px;}
+  .filtro-pill{font-size:0.78rem; font-weight:700; color:var(--primary); background:var(--primary-pale); padding:8px 14px; border-radius:999px;}
+
+  .proto-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:22px;}
+  .proto-card{background:var(--surface); border:1px solid var(--line); border-radius:16px; overflow:hidden; display:flex; flex-direction:column; transition: box-shadow 0.2s ease, transform 0.2s ease;}
+  .proto-card:hover{box-shadow:0 16px 34px -18px rgba(34,40,29,0.22); transform:translateY(-2px);}
+  .proto-photo{height:170px; overflow:hidden; background:var(--surface-alt);}
+  .proto-photo img{width:100%; height:100%; object-fit:cover;}
+  .proto-body{padding:22px 22px 24px; flex:1; display:flex; flex-direction:column;}
+  .proto-tag{font-size:0.68rem; font-weight:700; letter-spacing:0.06em; color:var(--primary);}
+  .proto-body h3{font-size:1.25rem; color:var(--ink); margin-top:8px;}
+  .proto-dims{display:flex; gap:16px; margin-top:12px;}
+  .proto-dims div{font-size:0.76rem; color:var(--ink-soft);}
+  .proto-dims strong{display:block; font-family:'Fraunces', serif; font-size:1rem; color:var(--ink); font-weight:600;}
+  .proto-precio{margin-top:16px; font-family:'Fraunces', serif; font-size:1.35rem; color:var(--primary);}
+  .proto-precio-bono{font-size:0.78rem; color:var(--primary-soft); margin-top:2px;}
+  .proto-mensualidad{font-size:0.8rem; color:var(--ink-soft); margin-top:4px;}
+  .proto-feats{list-style:none; margin-top:14px; border-top:1px solid var(--line); padding-top:14px; flex:1;}
+  .proto-feats li{font-size:0.82rem; color:var(--ink-soft); padding:3px 0; padding-left:14px; position:relative;}
+  .proto-feats li::before{content:"—"; position:absolute; left:0; color:var(--primary-soft);}
+  .proto-cta{margin-top:18px; display:inline-flex; align-items:center; justify-content:center; gap:8px; background:var(--primary-pale); border:1px solid transparent; color:var(--primary); font-weight:700; font-size:0.85rem; padding:11px 16px; border-radius:999px;}
+  .proto-cta:hover{background:var(--primary); color:#fff;}
+
+  .section-alt{background:var(--surface-alt);}
+  .section-alt .eyebrow{color:var(--primary);}
+  .amenidades-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:12px;}
+  .amenidad{background:var(--surface); border:1px solid var(--line); border-radius:10px; padding:18px 20px; font-size:0.9rem; color:var(--ink); font-weight:600; display:flex; align-items:center; gap:10px;}
+  .amenidad::before{content:""; width:6px; height:6px; background:var(--primary); border-radius:50%; flex-shrink:0;}
+
+  .fin-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:18px;}
+  .fin-card{background:var(--surface); border:1px solid var(--line); border-radius:14px; padding:28px 22px; text-align:left;}
+  .fin-card .tag{display:inline-block; font-size:0.7rem; font-weight:700; letter-spacing:0.06em; color:var(--primary); background:var(--primary-pale); padding:5px 10px; border-radius:999px;}
+  .fin-card h3{margin-top:14px; font-size:1.1rem; color:var(--ink);}
+  .fin-card p{margin-top:8px; font-size:0.88rem; color:var(--ink-soft); line-height:1.5;}
+  .preaparta-note{margin-top:34px; font-size:0.9rem; color:var(--ink-soft); border-left:3px solid var(--primary); padding-left:16px;}
+
+  .ubicacion-grid{display:grid; grid-template-columns:repeat(5,1fr); gap:24px;}
+  .ubicacion-col h4{font-family:'Fraunces', serif; font-size:0.95rem; color:var(--ink); margin-bottom:10px;}
+  .ubicacion-col ul{list-style:none;}
+  .ubicacion-col li{font-size:0.84rem; color:var(--ink-soft); padding:4px 0;}
+
+  .cta-final{background: var(--primary-pale); border-top:1px solid var(--line); border-bottom:1px solid var(--line); color:var(--ink); text-align:center; padding:88px 0;}
+  .cta-final h2{font-size:clamp(1.7rem, 4.4vw, 2.6rem); max-width:640px; margin:0 auto; color:var(--ink);}
+  .cta-final h2 em{font-style:normal; color:var(--primary);}
+  .cta-final p{margin-top:16px; color:var(--ink-soft); max-width:460px; margin-left:auto; margin-right:auto;}
+  .cta-final .btn-primary{margin-top:32px; justify-content:center;}
+  .cta-final .disclaimer{margin-top:28px; font-size:0.72rem; color:var(--ink-soft); opacity:0.7; max-width:520px; margin-left:auto; margin-right:auto;}
+
+  footer{background:var(--bg); padding:40px 0 120px;}
+  footer .wrap{display:flex; flex-direction:column; align-items:center; text-align:center; gap:6px;}
+  footer .brand{color:var(--ink); font-size:1.15rem;}
+  footer .role{font-size:0.85rem; color:var(--ink-soft);}
+  footer .contact{margin-top:10px; font-size:0.85rem; color:var(--primary); font-weight:600;}
+
+  .wa-float{position:fixed; right:18px; bottom:18px; z-index:60; display:flex; align-items:center; gap:10px; background:var(--whatsapp); color:#fff; padding:14px 20px; border-radius:999px; font-weight:700; font-size:0.9rem; box-shadow:0 12px 28px -6px rgba(34,40,29,0.28);}
+  .wa-float svg{width:22px; height:22px; flex-shrink:0;}
+
+  :focus-visible{outline:2px solid var(--primary); outline-offset:2px;}
+
+  @media (max-width: 960px){
+    .hero-inner{grid-template-columns:1fr;}
+    .hero-photo{min-height:220px;}
+    .hero-stats{grid-template-columns:repeat(2,1fr);}
+    .hero-stats div{border-bottom:1px solid var(--line);}
+    .proto-grid{grid-template-columns:repeat(2,1fr);}
+    .amenidades-grid{grid-template-columns:repeat(2,1fr);}
+    .fin-grid{grid-template-columns:1fr;}
+    .ubicacion-grid{grid-template-columns:repeat(2,1fr); gap:28px;}
+    nav.links{display:none;}
+  }
+  @media (max-width: 620px){
+    .proto-grid{grid-template-columns:1fr;}
+    .amenidades-grid{grid-template-columns:1fr;}
+    .ubicacion-grid{grid-template-columns:1fr;}
+    section{padding:56px 0;}
+    .wa-float span{display:none;}
+    .wa-float{padding:14px; border-radius:50%;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap">
+    <div class="brand-group">
+      <img src="https://tonymen209-crypto.github.io/mendozayasociados/logo-icon.jpg" alt="Logo Antonio Mendoza">
+      <div class="brand">Antonio Mendoza</div>
+    </div>
+    <nav class="links">
+      <a href="#prototipos">Prototipos</a>
+      <a href="#amenidades">Amenidades</a>
+      <a href="#financiamiento">Financiamiento</a>
+      <a href="#ubicacion">Ubicación</a>
+    </nav>
+    <a class="header-cta" href="https://wa.me/524422319291?text=Hola%2C%20me%20interesa%20informaci%C3%B3n%20de%20casas%20nuevas%20en%20El%20Marqu%C3%A9s" target="_blank" rel="noopener">WhatsApp →</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap">
+    <div class="hero-inner">
+      <div>
+        <div class="eyebrow">El Marqués, Querétaro</div>
+        <h1>De plano <em>a hogar.</em></h1>
+        <p class="lede">14 prototipos de 61 a 123 m² de construcción, dentro de una comunidad planeada con más de 200,000 m² de áreas verdes, lago y casa club — a 10 minutos de Los Arcos. Desde $1,739,000 MXN.</p>
+        <div class="hero-actions">
+          <a class="btn-primary" href="https://wa.me/524422319291?text=Hola%2C%20quiero%20agendar%20una%20visita" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.6 6.32A8.86 8.86 0 0 0 12.05 4a8.94 8.94 0 0 0-7.75 13.39L3 21l3.72-1.24a8.9 8.9 0 0 0 4.33 1.11h.01a8.93 8.93 0 0 0 8.94-8.94A8.86 8.86 0 0 0 17.6 6.32ZM12.06 19.4h-.01a7.4 7.4 0 0 1-3.78-1.04l-.27-.16-2.24.75.75-2.18-.18-.28a7.44 7.44 0 1 1 13.8-3.95 7.4 7.4 0 0 1-7.07 7.86Zm4.08-5.57c-.22-.11-1.32-.65-1.53-.73-.2-.08-.35-.11-.5.11-.15.22-.57.73-.7.88-.13.15-.26.16-.48.05a6.1 6.1 0 0 1-1.8-1.11 6.7 6.7 0 0 1-1.24-1.54c-.13-.22-.01-.34.1-.45.1-.1.22-.26.33-.39.11-.13.15-.22.22-.37.07-.15.04-.28-.02-.39-.06-.11-.5-1.2-.68-1.65-.18-.43-.36-.37-.5-.38h-.43a.82.82 0 0 0-.6.28 2.5 2.5 0 0 0-.78 1.86c0 1.1.8 2.16.91 2.31.11.15 1.57 2.4 3.81 3.36.53.23.95.37 1.27.47.53.17 1.02.15 1.4.09.43-.06 1.32-.54 1.5-1.06.19-.52.19-.96.13-1.06-.05-.09-.2-.15-.42-.26Z"/></svg>
+            Agendar visita por WhatsApp
+          </a>
+          <a class="btn-secondary" href="#prototipos">Ver los 14 prototipos</a>
+        </div>
+      </div>
+      <div class="hero-photo">
+        <img src="https://tonymen209-crypto.github.io/mendozayasociados/hero-lago.jpg" alt="Lago y áreas verdes de la comunidad">
+      </div>
+    </div>
+    <dl class="hero-stats">
+      <div><dt>14</dt><dd>Prototipos disponibles</dd></div>
+      <div><dt>61–123 m²</dt><dd>Rango de construcción</dd></div>
+      <div><dt>$1.74M</dt><dd>Precio de entrada MXN</dd></div>
+      <div><dt>200,000 m²</dt><dd>Áreas verdes en la comunidad</dd></div>
+    </dl>
+  </div>
+</section>
+
+<section id="prototipos">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Catálogo de prototipos</div>
+      <h2>Elige tu hoja de plano</h2>
+      <p>Cada prototipo trae su propia ficha técnica: terreno, construcción, precio de lista y mensualidad estimada con crédito hipotecario.</p>
+      <div class="filtros">
+        <span class="filtro-pill">2 recámaras</span>
+        <span class="filtro-pill">3 recámaras</span>
+        <span class="filtro-pill">Nueva generación</span>
+      </div>
+    </div>
+
+    <div class="proto-grid">
+
+      <div class="proto-card">
+        <div class="proto-photo"><img src="https://tonymen209-crypto.github.io/mendozayasociados/toledo.jpg" alt="Prototipo Toledo"></div>
+        <div class="proto-body">
+          <div class="proto-tag">HOJA A-01 · 2 REC</div>
+          <h3>Toledo</h3>
+          <div class="proto-dims"><div><strong>99 m²</strong>Terreno</div><div><strong>97.50 m²</strong>Construcción</div></div>
+          <div class="proto-precio">$2,697,000</div>
+          <div class="proto-mensualidad">desde $23,336/mes con crédito hipotecario</div>
+          <ul class="proto-feats"><li>2 recámaras · 2.5 baños</li><li>Comedor, cocina, sala</li><li>Cochera 2 autos</li><li>Cuarto de lavado, pasillo lateral</li></ul>
+          <a class="proto-cta" href="https://wa.me/524422319291?text=Hola%2C%20me%20interesa%20el%20modelo%20Toledo" target="_blank" rel="noopener">Cotizar Toledo →</a>
+        </div>
+      </div>
+
+      <div class="proto-card">
+        <div class="proto-photo"><img src="https://tonymen209-crypto.github.io/mendozayasociados/velasco.jpg" alt="Prototipo Velasco"></div>
+        <div class="proto-body">
+          <div class="proto-tag">HOJA A-02 · 2 REC</div>
+          <h3>Velasco</h3>
+          <div class="proto-dims"><div><strong>90.50 m²</strong>Terreno</div><div><strong>89.50 m²</strong>Construcción</div></div>
+          <div class="proto-precio">$2,382,000</div>
+          <div class="proto-mensualidad">desde $24,814/mes con crédito hipotecario</div>
+          <ul class="proto-feats"><li>2 recámaras · Sala, comedor</li><li>Cochera 2 autos</li><li>Cuarto de lavado, pasillo lateral</li></ul>
+          <a class="proto-cta" href="https://wa.me/524422319291?text=Hola%2C%20me%20interesa%20el%20modelo%20Velasco" target="_blank" rel="noopener">Cotizar Velasco →</a>
+        </div>
+      </div>
+
+      <div class="proto-card">
+        <div class="proto-photo"><img src="https://tonymen209-crypto.github.io/mendozayasociados/fuentes.jpg" alt="Prototipo Fuentes"></div>
+        <div class="proto-body">
+          <div class="proto-tag">HOJA A-03 · 2 REC</div>
+          <h3>Fuentes</h3>
+          <div class="proto-dims"><div><strong>82.50 m²</strong>Terreno</div><div><strong>61.55 m²</strong>Construcción</div></div>
+          <div class="proto-precio">$1,739,000</div>
+          <div class="proto-mensualidad">desde $17,569/mes con crédito hipotecario</div>
+          <ul class="proto-feats"><li>2 recámaras · 1.5 baños</li><li>Comedor, cocina, sala</li><li>Cochera 1 auto, pasillo lateral</li></ul>
+          <a class="proto-cta" href="https://wa.me/524422319291?text=Hola%2C%20me%20interesa%20el%20modelo%20Fuentes" target="_blank" rel="noopener">Cotizar Fuentes →</a>
+        </div>
+      </div>
+
+      <div class="proto-card">
+        <div class="proto-photo"><img src="https://tonymen209-crypto.github.io/mendozayasociados/tamayo.jpg" alt="Prototipo Tamayo"></div>
+        <div class="proto-body">
+          <div class="proto-tag">HOJA B-01 · 3 REC</div>
+          <h3>Tamayo</h3>
+          <div class="proto-dims"><div><strong>115.50 m²</strong>Terreno</div><div><strong>123 m²</strong>Construcción</div></div>
+          <div class="proto-precio">$3,109,000</div>
+          <div class="proto-mensualidad">desde $32,909/mes con crédito hipotecario</div>
+          <ul class="proto-feats"><li>3 recámaras · 2.5 baños</li><li>Comedor, cocina</li><li>Cochera 2 autos, cuarto de lavado</li></ul>
+          <a class="proto-cta" href="https://wa.me/524422319291?text=Hola%2C%20me%20interesa%20el%20modelo%20Tamayo" target="_blank" rel="noopener">Cotizar Tamayo →</a>
+        </div>
+      </div>
+
+      <div class="proto-card">
+        <div class="proto-photo"><img src="https://tonymen209-crypto.github.io/mendozayasociados/frida.jpg" alt="Prototipo Frida"></div>
+        <div class="proto-body">
+          <div class="proto-tag">HOJA B-02 · 3 REC</div>
+          <h3>Frida</h3>
+          <div class="proto-dims"><div><strong>115 m²</strong>Terreno</div><div><strong>106 m²</strong>Construcción</div></div>
+          <div class="proto-precio">$2,948,000</div>
+          <div class="proto-mensualidad">desde $30,890/mes con crédito hipotecario</div>
+          <ul class="proto-feats"><li>3 recámaras · 2.5 baños</li><li>Comedor, cocina, sala</li><li>Cochera 2 autos, cuarto de lavado</li></ul>
+          <a class="proto-cta" href="https://wa.me/524422319291?text=Hola%2C%20me%20interesa%20el%20modelo%20Frida" target="_blank" rel="noopener">Cotizar Frida →</a>
+        </div>
+      </div>
+
+      <div class="proto-card">
+        <div class="proto-photo"><img src="https://tonymen209-crypto.github.io/mendozayasociados/monsivais.jpg" alt="Prototipo Monsiváis"></div>
+        <div class="proto-body">
+          <div class="proto-tag">HOJA B-03 · 3 REC</div>
+          <h3>Monsiváis</h3>
+          <div class="proto-dims"><div><strong>99 m²</strong>Terreno</div><div><strong>97.50 m²</strong>Construcción</div></div>
+          <div class="proto-precio">$2,697,000</div>
+          <div class="proto-mensualidad">desde $27,752/mes con crédito hipotecario</div>
+          <ul class="proto-feats"><li>3 recámaras · 2.5 baños</li><li>Comedor, cocina, sala</li><li>Cochera 2 autos, pasillo lateral</li></ul>
+          <a class="proto-cta" href="https://wa.me/524422319291?text=Hola%2C%20me%20interesa%20el%20modelo%20Monsiv%C3%A1is" target="_blank" rel="noopener">Cotizar Monsiváis →</a>
+        </div>
+      </div>
+
+      <div class="proto-card">
+        <div class="proto-photo"><img src="https://tonymen209-crypto.github.io/mendozayasociados/orozco.jpg" alt="Prototipo Orozco"></div>
+        <div class="proto-body">
+          <div class="proto-tag">HOJA B-04 · 3 REC</div>
+          <h3>Orozco</h3>
+          <div class="proto-dims"><div><strong>90.50 m²</strong>Terreno</div><div><strong>83 m²</strong>Construcción</div></div>
+          <div class="proto-precio">$2,266,000</div>
+          <div class="proto-mensualidad">desde $23,976/mes con crédito hipotecario</div>
+          <ul class="proto-feats"><li>3 recámaras · 1.5 baños</li><li>Comedor, cocina</li><li>Cochera 1 auto, cuarto de lavado</li></ul>
+          <a class="proto-cta" href="https://wa.me/524422319291?text=Hola%2C%20me%20interesa%20el%20modelo%20Orozco" target="_blank" rel="noopener">Cotizar Orozco →</a>
+        </div>
+      </div>
+
+      <div class="proto-card">
+        <div class="proto-photo"><img src="https://tonymen209-crypto.github.io/mendozayasociados/alisios.jpg" alt="Prototipo Alisios"></div>
+        <div class="proto-body">
+          <div class="proto-tag">HOJA B-05 · 3 REC</div>
+          <h3>Alisios</h3>
+          <div class="proto-dims"><div><strong>87.45 m²</strong>Terreno</div><div><strong>75.54 m²</strong>Construcción</div></div>
+          <div class="proto-precio">$1,995,000</div>
+          <div class="proto-mensualidad">desde $20,317/mes con crédito hipotecario</div>
+          <ul class="proto-feats"><li>3 recámaras · 1.5 baños</li><li>Comedor, cocina, sala</li><li>Cochera 1 auto, pasillo lateral</li></ul>
+          <a class="proto-cta" href="https://wa.me/524422319291?text=Hola%2C%20me%20interesa%20el%20modelo%20Alisios" target="_blank" rel="noopener">Cotizar Alisios →</a>
+        </div>
+      </div>
+
+      <div class="proto-card">
+        <div class="proto-photo"><img src="https://tonymen209-crypto.github.io/mendozayasociados/mangara.jpg" alt="Prototipo Mangara Planta Baja"></div>
+        <div class="proto-body">
+          <div class="proto-tag">HOJA C-01 · DUPLEX · P. BAJA</div>
+          <h3>Mangara Planta Baja</h3>
+          <div class="proto-dims"><div><strong>52.73 m²</strong>Construcción</div><div><strong>$72,100</strong>Bono</div></div>
+          <div class="proto-precio">$1,572,900</div>
+          <div class="proto-precio-bono">Precio de lista $1,645,000 · con bono aplicado</div>
+          <div class="proto-mensualidad">Preventa Coto 21</div>
+          <ul class="proto-feats"><li>2 recámaras · 1 baño</li><li>Comedor, sala, cocina</li><li>Cuarto de lavado</li></ul>
+          <a class="proto-cta" href="https://wa.me/524422319291?text=Hola%2C%20me%20interesa%20el%20modelo%20Mangara%20Planta%20Baja" target="_blank" rel="noopener">Cotizar Mangara PB →</a>
+        </div>
+      </div>
+
+      <div class="proto-card">
+        <div class="proto-photo"><img src="https://tonymen209-crypto.github.io/mendozayasociados/mangara.jpg" alt="Prototipo Mangara Planta Alta"></div>
+        <div class="proto-body">
+          <div class="proto-tag">HOJA C-02 · DUPLEX · P. ALTA</div>
+          <h3>Mangara Planta Alta</h3>
+          <div class="proto-dims"><div><strong>52.73 m²*</strong>Construcción</div><div><strong>$97,000</strong>Bono</div></div>
+          <div class="proto-precio">$1,498,000</div>
+          <div class="proto-precio-bono">Precio de lista $1,595,000 · con bono aplicado</div>
+          <div class="proto-mensualidad">Preventa Coto 21</div>
+          <ul class="proto-feats"><li>2 recámaras · 1 baño</li><li>Comedor, sala, cocina</li><li>Cuarto de lavado</li></ul>
+          <a class="proto-cta" href="https://wa.me/524422319291?text=Hola%2C%20me%20interesa%20el%20modelo%20Mangara%20Planta%20Alta" target="_blank" rel="noopener">Cotizar Mangara PA →</a>
+        </div>
+      </div>
+
+      <div class="proto-card">
+        <div class="proto-photo"><img src="https://tonymen209-crypto.github.io/mendozayasociados/alba.jpg" alt="Prototipo Alba Loft"></div>
+        <div class="proto-body">
+          <div class="proto-tag">HOJA C-03 · LOFT</div>
+          <h3>Alba</h3>
+          <div class="proto-dims"><div><strong>99 m²</strong>Terreno</div><div><strong>74.90 m²</strong>Construcción</div></div>
+          <div class="proto-precio">$2,134,000</div>
+          <div class="proto-precio-bono">Precio de lista $2,320,000 · con bono $186,000</div>
+          <div class="proto-mensualidad">Preventa Coto 21</div>
+          <ul class="proto-feats"><li>2 recámaras · 2 baños</li><li>Comedor, sala, cocina</li><li>Patio trasero</li></ul>
+          <a class="proto-cta" href="https://wa.me/524422319291?text=Hola%2C%20me%20interesa%20el%20modelo%20Alba" target="_blank" rel="noopener">Cotizar Alba →</a>
+        </div>
+      </div>
+
+      <div class="proto-card">
+        <div class="proto-photo"><img src="https://tonymen209-crypto.github.io/mendozayasociados/aura.jpg" alt="Prototipo Aura"></div>
+        <div class="proto-body">
+          <div class="proto-tag">HOJA C-04 · 3 REC</div>
+          <h3>Aura</h3>
+          <div class="proto-dims"><div><strong>99 m²</strong>Terreno</div><div><strong>85.78 m²</strong>Construcción</div></div>
+          <div class="proto-precio">$2,433,000</div>
+          <div class="proto-precio-bono">Precio de lista $2,670,000 · con bono $237,000</div>
+          <div class="proto-mensualidad">Preventa Coto 21</div>
+          <ul class="proto-feats"><li>3 recámaras (opción a estudio en PB)</li><li>2 baños · Comedor, sala, cocina</li><li>Patio trasero</li></ul>
+          <a class="proto-cta" href="https://wa.me/524422319291?text=Hola%2C%20me%20interesa%20el%20modelo%20Aura" target="_blank" rel="noopener">Cotizar Aura →</a>
+        </div>
+      </div>
+
+      <div class="proto-card">
+        <div class="proto-photo"><img src="https://tonymen209-crypto.github.io/mendozayasociados/mare.jpg" alt="Prototipo Maré"></div>
+        <div class="proto-body">
+          <div class="proto-tag">HOJA C-05</div>
+          <h3>Maré</h3>
+          <div class="proto-dims"><div><strong>82.5 m²</strong>Terreno</div><div><strong>61.86 m²</strong>Construcción</div></div>
+          <div class="proto-precio">$1,731,000</div>
+          <div class="proto-precio-bono">Precio de lista $1,918,000 · con bono $187,000</div>
+          <div class="proto-mensualidad">Preventa Coto 21</div>
+          <ul class="proto-feats"><li>2 recámaras · 1.5 baños</li><li>Comedor, sala, cocina</li><li>Patio trasero</li></ul>
+          <a class="proto-cta" href="https://wa.me/524422319291?text=Hola%2C%20me%20interesa%20el%20modelo%20Mar%C3%A9" target="_blank" rel="noopener">Cotizar Maré →</a>
+        </div>
+      </div>
+
+      <div class="proto-card">
+        <div class="proto-photo"><img src="https://tonymen209-crypto.github.io/mendozayasociados/nuvem.jpg" alt="Prototipo Nuvem"></div>
+        <div class="proto-body">
+          <div class="proto-tag">HOJA C-06 · 3 REC</div>
+          <h3>Nuvem</h3>
+          <div class="proto-dims"><div><strong>99 m²</strong>Terreno</div><div><strong>98.95 m²</strong>Construcción</div></div>
+          <div class="proto-precio">$2,722,000</div>
+          <div class="proto-precio-bono">Precio de lista $2,995,000 · con bono $273,000</div>
+          <div class="proto-mensualidad">Preventa Coto 21</div>
+          <ul class="proto-feats"><li>3 recámaras (opción a estudio en PB)</li><li>2.5 baños · Comedor, sala, cocina</li><li>Patio trasero</li></ul>
+          <a class="proto-cta" href="https://wa.me/524422319291?text=Hola%2C%20me%20interesa%20el%20modelo%20Nuvem" target="_blank" rel="noopener">Cotizar Nuvem →</a>
+        </div>
+      </div>
+
+      <div class="proto-card">
+        <div class="proto-photo"><img src="https://tonymen209-crypto.github.io/mendozayasociados/ziba.jpg" alt="Prototipo Zibá"></div>
+        <div class="proto-body">
+          <div class="proto-tag">HOJA C-07</div>
+          <h3>Zibá</h3>
+          <div class="proto-dims"><div><strong>99 m²</strong>Terreno</div><div><strong>70.15 m²</strong>Construcción</div></div>
+          <div class="proto-precio">$1,923,000</div>
+          <div class="proto-precio-bono">Precio de lista $2,170,000 · con bono $247,000</div>
+          <div class="proto-mensualidad">Preventa Coto 21</div>
+          <ul class="proto-feats"><li>2 recámaras · 1.5 baños</li><li>Comedor, sala, cocina</li><li>Patio trasero</li></ul>
+          <a class="proto-cta" href="https://wa.me/524422319291?text=Hola%2C%20me%20interesa%20el%20modelo%20Zib%C3%A1" target="_blank" rel="noopener">Cotizar Zibá →</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<section id="amenidades" class="section-alt">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">El pulmón verde de la comunidad</div>
+      <h2>Vivir en equilibrio, todos los días</h2>
+      <p>Más de 200,000 m² de áreas verdes, lago y espacios recreativos en el corazón de la comunidad.</p>
+    </div>
+    <div class="amenidades-grid">
+      <div class="amenidad">Casa Club con alberca</div>
+      <div class="amenidad">Hacienda central</div>
+      <div class="amenidad">Pista de patinaje</div>
+      <div class="amenidad">Coworking al aire libre</div>
+      <div class="amenidad">Pista de jogging</div>
+      <div class="amenidad">Ciclovía interna</div>
+      <div class="amenidad">Lago</div>
+      <div class="amenidad">Kids Club</div>
+      <div class="amenidad">Zona deportiva</div>
+      <div class="amenidad">Área canina</div>
+      <div class="amenidad">Cancha de pádel</div>
+      <div class="amenidad">Zona de caminata</div>
+      <div class="amenidad">Zona de meditación</div>
+      <div class="amenidad">Gimnasio</div>
+      <div class="amenidad">Acceso controlado</div>
+      <div class="amenidad">Crossfit</div>
+      <div class="amenidad">Cancha Futbol 7</div>
+      <div class="amenidad">Pump track</div>
+    </div>
+  </div>
+</section>
+
+<section id="financiamiento">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Cómo comprar</div>
+      <h2>Financiamiento para cada perfil</h2>
+    </div>
+    <div class="fin-grid">
+      <div class="fin-card">
+        <span class="tag">CRÉDITO · INFONAVIT</span>
+        <h3>Infonavit</h3>
+        <p>Usa tu subcuenta de vivienda como enganche o pago total, según tus puntos acumulados.</p>
+      </div>
+      <div class="fin-card">
+        <span class="tag">CRÉDITO · MIXTO</span>
+        <h3>Cofinavit</h3>
+        <p>Combina tu crédito Infonavit con un crédito bancario para acceder a un prototipo más grande.</p>
+      </div>
+      <div class="fin-card">
+        <span class="tag">CRÉDITO · BANCARIO</span>
+        <h3>Directo con banco</h3>
+        <p>Simulación de mensualidad personalizada según tu perfil, sin depender de tu Infonavit.</p>
+      </div>
+    </div>
+    <p class="preaparta-note">Preaparta tu prototipo con $5,000 — asegura ubicación y precio, con cancelación sin penalización.</p>
+  </div>
+</section>
+
+<section id="ubicacion" class="section-alt">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="eyebrow">Ubicación</div>
+      <h2>A 10 minutos de Los Arcos</h2>
+      <p>Sobre la Carr. Qro-México, a la altura del Conin, cerca del Blvd. Bernardo Quintana — zona de alta plusvalía y fácil conectividad.</p>
+    </div>
+    <div class="ubicacion-grid">
+      <div class="ubicacion-col"><h4>Súper</h4><ul><li>HEB</li><li>Chedraui Selecto</li><li>La Comer</li><li>Home Depot</li></ul></div>
+      <div class="ubicacion-col"><h4>Escuelas</h4><ul><li>Colegio New Land</li><li>Univ. Cuauhtémoc</li><li>Colegio del Olmo</li><li>Colegio El Abeto</li></ul></div>
+      <div class="ubicacion-col"><h4>Hospitales</h4><ul><li>Hospital Ángeles</li><li>Star Médica</li><li>Hospital del Niño</li><li>Cruz Roja</li></ul></div>
+      <div class="ubicacion-col"><h4>Entretenimiento</h4><ul><li>Cinedot</li><li>Centro de Congresos</li><li>Estadio Corregidora</li><li>Teatro Metropolitano</li></ul></div>
+      <div class="ubicacion-col"><h4>Plazas</h4><ul><li>The Hub</li><li>Plaza Q 7001</li><li>Puerta la Victoria</li><li>Paseo Querétaro</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-final">
+  <div class="wrap">
+    <div class="eyebrow">Da el siguiente paso</div>
+    <h2>¿Cuál hoja de plano <em>se convierte en tu hogar?</em></h2>
+    <p>Escríbeme por WhatsApp y te ayudo a encontrar el prototipo que mejor se ajusta a tu familia y tu presupuesto.</p>
+    <a class="btn-primary" href="https://wa.me/524422319291?text=Hola%2C%20me%20interesa%20informaci%C3%B3n%20de%20casas%20nuevas%20en%20El%20Marqu%C3%A9s" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.6 6.32A8.86 8.86 0 0 0 12.05 4a8.94 8.94 0 0 0-7.75 13.39L3 21l3.72-1.24a8.9 8.9 0 0 0 4.33 1.11h.01a8.93 8.93 0 0 0 8.94-8.94A8.86 8.86 0 0 0 17.6 6.32ZM12.06 19.4h-.01a7.4 7.4 0 0 1-3.78-1.04l-.27-.16-2.24.75.75-2.18-.18-.28a7.44 7.44 0 1 1 13.8-3.95 7.4 7.4 0 0 1-7.07 7.86Zm4.08-5.57c-.22-.11-1.32-.65-1.53-.73-.2-.08-.35-.11-.5.11-.15.22-.57.73-.7.88-.13.15-.26.16-.48.05a6.1 6.1 0 0 1-1.8-1.11 6.7 6.7 0 0 1-1.24-1.54c-.13-.22-.01-.34.1-.45.1-.1.22-.26.33-.39.11-.13.15-.22.22-.37.07-.15.04-.28-.02-.39-.06-.11-.5-1.2-.68-1.65-.18-.43-.36-.37-.5-.38h-.43a.82.82 0 0 0-.6.28 2.5 2.5 0 0 0-.78 1.86c0 1.1.8 2.16.91 2.31.11.15 1.57 2.4 3.81 3.36.53.23.95.37 1.27.47.53.17 1.02.15 1.4.09.43-.06 1.32-.54 1.5-1.06.19-.52.19-.96.13-1.06-.05-.09-.2-.15-.42-.26Z"/></svg>
+      Escribir por WhatsApp
+    </a>
+    <p class="disclaimer">Imágenes de carácter ilustrativo. Precios y prototipos sujetos a cambio sin previo aviso. Sujeto a disponibilidad. Precios de lista, sin descuento.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="brand">Antonio Mendoza</div>
+    <div class="role">Asesor Inmobiliario</div>
+    <div class="contact">WhatsApp: 442 231 9291</div>
+  </div>
+</footer>
+
+<a class="wa-float" href="https://wa.me/524422319291?text=Hola%2C%20me%20interesa%20informaci%C3%B3n%20de%20casas%20nuevas%20en%20El%20Marqu%C3%A9s" target="_blank" rel="noopener" aria-label="Escríbeme por WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.6 6.32A8.86 8.86 0 0 0 12.05 4a8.94 8.94 0 0 0-7.75 13.39L3 21l3.72-1.24a8.9 8.9 0 0 0 4.33 1.11h.01a8.93 8.93 0 0 0 8.94-8.94A8.86 8.86 0 0 0 17.6 6.32ZM12.06 19.4h-.01a7.4 7.4 0 0 1-3.78-1.04l-.27-.16-2.24.75.75-2.18-.18-.28a7.44 7.44 0 1 1 13.8-3.95 7.4 7.4 0 0 1-7.07 7.86Zm4.08-5.57c-.22-.11-1.32-.65-1.53-.73-.2-.08-.35-.11-.5.11-.15.22-.57.73-.7.88-.13.15-.26.16-.48.05a6.1 6.1 0 0 1-1.8-1.11 6.7 6.7 0 0 1-1.24-1.54c-.13-.22-.01-.34.1-.45.1-.1.22-.26.33-.39.11-.13.15-.22.22-.37.07-.15.04-.28-.02-.39-.06-.11-.5-1.2-.68-1.65-.18-.43-.36-.37-.5-.38h-.43a.82.82 0 0 0-.6.28 2.5 2.5 0 0 0-.78 1.86c0 1.1.8 2.16.91 2.31.11.15 1.57 2.4 3.81 3.36.53.23.95.37 1.27.47.53.17 1.02.15 1.4.09.43-.06 1.32-.54 1.5-1.06.19-.52.19-.96.13-1.06-.05-.09-.2-.15-.42-.26Z"/></svg>
+  <span>Escríbeme</span>
+</a>
+
+</body>
+</html>
