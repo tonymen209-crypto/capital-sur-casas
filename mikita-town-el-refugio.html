@@ -375,12 +375,12 @@
         </figure>
         <!-- Placeholders de galería — reemplazar por más fotos/renders reales. Tamaño sugerido: 800x600px cada una -->
         <figure>
-          <img src="4.jpg" alt="Foto del avance de obra Etapa 1" width="800" height="600" loading="lazy">
-          <figcaption>Avance de obra — Etapa 1</figcaption>
+          <img src="fachada-frontal.png" alt="Render de fachada frontal de Mikita Town El Refugio, vista de noche" width="1213" height="1296" loading="lazy">
+          <figcaption>Fachada frontal — render</figcaption>
         </figure>
         <figure>
-          <img src="5.jpg" alt="Render de interior de departamento tipo" width="800" height="600" loading="lazy">
-          <figcaption>Interior — render</figcaption>
+          <video src="video-amenidades.mp4" controls preload="metadata" aria-label="Video de amenidades de Mikita Town El Refugio" style="aspect-ratio:4/3; object-fit:cover; width:100%; background:#000;"></video>
+          <figcaption>Amenidades — video</figcaption>
         </figure>
       </div>
     </div>
@@ -534,15 +534,13 @@
 INSTRUCCIONES DE DESPLIEGUE Y PRUEBA
 ==================================================================
 
-1) IMÁGENES — YA HAY 2 RENDERS REALES INTEGRADOS
-   - El hero y la galería ya usan tus renders reales:
-     /images/patio-alberca-render.webp (patio/alberca) y
-     /images/fachada-vive-en-equilibrio.webp (fachada con la pieza "Vive en Equilibrio").
-   - Sube la carpeta /images/ completa (incluidas estas 2 imágenes) junto con este HTML
-     al mismo servidor — están en /mnt/user-data/outputs/images/ en este chat.
-   - AÚN QUEDAN 2 PLACEHOLDERS por reemplazar en la galería: /images/4.jpg y /images/5.jpg
-     (sugerido: 800x600px, < 150KB cada una) — súbelos con esos nombres o edita el src="".
-   - Actualiza el atributo alt="" de cualquier imagen nueva que agregues para que describa la foto real.
+1) IMÁGENES Y VIDEO — YA HAY 3 FOTOS Y 1 VIDEO REALES INTEGRADOS
+   - La galería ya usa contenido real: patio-alberca-render.webp, fachada-vive-en-equilibrio.webp,
+     fachada-frontal.png (foto) y video-amenidades.mp4 (video con controles, sin autoplay).
+   - Sube estos 4 archivos JUNTO con el HTML, todos en la misma carpeta/nivel (no hace falta
+     subcarpeta — el HTML ya los busca en la raíz). Están en /mnt/user-data/outputs/images/ en este chat.
+   - Si más adelante agregas más fotos, solo copia el mismo patrón: <figure><img src="nombre.jpg" alt="..."></figure>
+     dentro de .gallery-grid.
 
 2) CONFIGURAR EL FORMULARIO (/contact)
    - Este archivo NO incluye backend. Los dos formularios (header y sección "Contacto")
