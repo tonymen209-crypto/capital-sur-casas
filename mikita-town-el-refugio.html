@@ -168,17 +168,29 @@
 
   /* ===================== Galería ===================== */
   .section-alt{background:var(--surface-alt);}
-  .gallery-grid{
-    display:grid; grid-template-columns:repeat(4,1fr); gap:14px;
+  .gallery-mosaic{
+    display:grid;
+    grid-template-columns: 1.3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap:14px;
+    height:520px;
   }
-  .gallery-grid figure{
-    border-radius:12px; overflow:hidden; background:var(--surface); border:1px solid var(--line);
+  .gallery-mosaic .g-feature{ grid-row: 1 / 3; }
+  .gallery-mosaic figure{
+    position:relative; margin:0; border-radius:14px; overflow:hidden;
+    border:1px solid var(--line); background:var(--surface); height:100%;
   }
-  .gallery-grid img{aspect-ratio:4/3; object-fit:cover;}
-  .gallery-grid figcaption{
-    font-size:0.72rem; color:var(--ink-soft); padding:8px 10px;
+  .gallery-mosaic img{width:100%; height:100%; object-fit:cover;}
+  .gallery-mosaic figcaption{
+    position:absolute; left:0; right:0; bottom:0;
+    background: linear-gradient(0deg, rgba(31,35,35,0.65), rgba(31,35,35,0));
+    color:#fff; font-size:0.85rem; font-weight:700; padding:22px 16px 14px;
   }
-  @media (max-width:860px){ .gallery-grid{grid-template-columns:repeat(2,1fr);} }
+  @media (max-width:760px){
+    .gallery-mosaic{ grid-template-columns:1fr; grid-template-rows:none; height:auto; }
+    .gallery-mosaic .g-feature{ grid-row:auto; height:280px; }
+    .gallery-mosaic figure{ height:200px; }
+  }
 
   /* ===================== Ficha técnica ===================== */
   .ficha-grid{
@@ -362,25 +374,20 @@
       <div class="section-head center">
         <span class="eyebrow">Galería</span>
         <h2>Así se ve Mikita Town El Refugio</h2>
-        <p>Renders y fotos del avance de obra — Etapa 1.</p>
+        <p>Renders del desarrollo — Etapa 1.</p>
       </div>
-      <div class="gallery-grid">
-        <figure>
-          <img src="fachada-vive-en-equilibrio.webp" alt="Render de fachada de Mikita Town El Refugio, Vive en Equilibrio" width="1200" height="800" loading="lazy">
-          <figcaption>Fachada — render</figcaption>
+      <div class="gallery-mosaic">
+        <figure class="g-feature">
+          <img src="fachada-frontal.png" alt="Render de fachada frontal de Mikita Town El Refugio, vista de noche" loading="lazy">
+          <figcaption>Fachada frontal</figcaption>
         </figure>
         <figure>
-          <img src="patio-alberca-render.webp" alt="Render de patio, alberca y área de descanso de Mikita Town El Refugio" width="800" height="600" loading="lazy">
-          <figcaption>Patio y alberca — render</figcaption>
-        </figure>
-        <!-- Placeholders de galería — reemplazar por más fotos/renders reales. Tamaño sugerido: 800x600px cada una -->
-        <figure>
-          <img src="fachada-frontal.png" alt="Render de fachada frontal de Mikita Town El Refugio, vista de noche" width="1213" height="1296" loading="lazy">
-          <figcaption>Fachada frontal — render</figcaption>
+          <img src="fachada-vive-en-equilibrio.webp" alt="Render de fachada de Mikita Town El Refugio, Vive en Equilibrio" loading="lazy">
+          <figcaption>Vista general</figcaption>
         </figure>
         <figure>
-          <video src="video-amenidades.mp4" controls preload="metadata" aria-label="Video de amenidades de Mikita Town El Refugio" style="aspect-ratio:4/3; object-fit:cover; width:100%; background:#000;"></video>
-          <figcaption>Amenidades — video</figcaption>
+          <img src="patio-alberca-render.webp" alt="Render de patio, alberca y área de descanso de Mikita Town El Refugio" loading="lazy">
+          <figcaption>Patio y alberca</figcaption>
         </figure>
       </div>
     </div>
@@ -534,13 +541,15 @@
 INSTRUCCIONES DE DESPLIEGUE Y PRUEBA
 ==================================================================
 
-1) IMÁGENES Y VIDEO — YA HAY 3 FOTOS Y 1 VIDEO REALES INTEGRADOS
-   - La galería ya usa contenido real: patio-alberca-render.webp, fachada-vive-en-equilibrio.webp,
-     fachada-frontal.png (foto) y video-amenidades.mp4 (video con controles, sin autoplay).
-   - Sube estos 4 archivos JUNTO con el HTML, todos en la misma carpeta/nivel (no hace falta
-     subcarpeta — el HTML ya los busca en la raíz). Están en /mnt/user-data/outputs/images/ en este chat.
-   - Si más adelante agregas más fotos, solo copia el mismo patrón: <figure><img src="nombre.jpg" alt="..."></figure>
-     dentro de .gallery-grid.
+1) IMÁGENES — GALERÍA TIPO MOSAICO CON 3 FOTOS REALES
+   - La galería ahora usa un layout de mosaico: 1 foto grande destacada (fachada-frontal.png)
+     + 2 fotos más pequeñas apiladas (fachada-vive-en-equilibrio.webp y patio-alberca-render.webp).
+   - Sube estas 3 imágenes junto con el HTML, todas en la misma carpeta/nivel (sin subcarpeta).
+     Están en /mnt/user-data/outputs/images/ en este chat.
+   - video-amenidades.mp4 ya NO se usa en esta versión — puedes conservarlo para otro uso
+     (por ejemplo en redes sociales) o pedirme que te arme una sección de video aparte.
+   - Si agregas más fotos después, puedes ampliar el mosaico o volver a un grid simple —
+     avísame y te ayudo a ajustarlo.
 
 2) CONFIGURAR EL FORMULARIO (/contact)
    - Este archivo NO incluye backend. Los dos formularios (header y sección "Contacto")
